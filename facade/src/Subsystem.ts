@@ -27,7 +27,7 @@ export class CodecFactory {
 }
 
 export class Compresser {
-  compressFile(file: VideoFile): void {
+  static compressFile(file: VideoFile): void {
     console.log('Compressing the file...');
   }
 }
