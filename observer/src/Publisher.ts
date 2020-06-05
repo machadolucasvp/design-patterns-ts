@@ -9,7 +9,7 @@ export default interface Publisher<K> {
   subscribers: Map<K, Set<Subscriber>>
   subscribe(subscriber: Subscriber, eventType?: K): void;
   unsubscribe(subscriber: Subscriber, eventType?: K): boolean;
-  notify(eventType?: EventType): void;
+  notify(eventType?: K): void;
   notifyAll(): void;
 }
 
